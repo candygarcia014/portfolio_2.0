@@ -39,7 +39,7 @@ body::before {
 }
 
 .nav-link {
-    color: rgb(193, 193, 193);
+    color: black;
     font-size: 14px;
     padding: 0.3rem 1rem;
 }
@@ -64,7 +64,7 @@ body::before {
 }
 
 .email-and-phone {
-    color: whitesmoke;
+    color: black;
     /* margin: 1rem 0 0 3rem; */
     position: absolute;
     left: 3rem;
@@ -220,7 +220,7 @@ li {
 }
 
 .repo-link:hover {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
 }
 
@@ -234,7 +234,7 @@ li {
 
 /* for contact.html */
 .header2 {
-    color: rgb(193, 193, 193);
+    color: black;
     text-align: center;
     margin-top: 1.5rem
 }
@@ -248,19 +248,19 @@ li {
 }
 
 label {
-    color: rgb(193, 193, 193);
+    color: black;
 }
 
 .form-control {
-    background-color: rgba(33, 33, 33, 0.559);
+    background-color:black;
     
 }
 
 input.form-control:focus {
     background-color:rgba(33, 33, 33, 0.559);
-    color: whitesmoke;
-    border-color: whitesmoke !important;
-    box-shadow: whitesmoke !important;
+    color: black;
+    border-color: black !important;
+    box-shadow: black !important;
     box-shadow: none;
    -webkit-box-shadow: none;
    -moz-box-shadow: none;
@@ -274,7 +274,7 @@ input.form-control:focus {
     margin-right: auto;
     border: none;
     color: black;
-    background-color: whitesmoke;
+    background-color: black;
     border-radius: 0.7rem;
 }
 
