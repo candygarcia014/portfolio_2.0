@@ -22,23 +22,6 @@ body {
 }
 
 
-
-
-/* 
-    font-family: 'Spartan', sans-serif !important;
-    font-weight: 200;
-    line-height: 1.5;
-    background-image: url("./assets/images/silverlights.jpg");
-    
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-repeat: repeat;
-    background-color: rgb(2, 2, 2);
-    /* background-size: auto; */
-    background-size: cover; */
-}
-
 body::before {
     content: "";
     position: fixed;
