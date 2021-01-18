@@ -1,14 +1,603 @@
+* {
+    z-index: 1;
+}
+
+/* all pages */
 body {
-    background-color: coral;
+    font-family: 'Spartan', sans-serif !important;
+    font-weight: 200;
+    line-height: 1.5;
+    background-image: url("./assets/images/silverlights.jpg");
+    
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    background-color: rgb(2, 2, 2);
+    /* background-size: auto; */
+    background-size: cover;
 }
 
-#Header a:hover {
-    color: #ffffff
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-#bg-img {
-    background: url('Assets/Images/bkg.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 500px;
+.navbar-expand-lg {
+    margin-top: 1.5rem;
 }
+
+.all-pages {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-link {
+    color: rgb(193, 193, 193);
+    font-size: 14px;
+    padding: 0.3rem 1rem;
+}
+
+.nav-link:hover, 
+.brand:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.brand {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 1rem;
+ 
+}
+
+#contact {
+    margin-right: 1.5rem;
+}
+
+.email-and-phone {
+    color: whitesmoke;
+    /* margin: 1rem 0 0 3rem; */
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+}
+
+
+
+
+
+/* for index.html */
+.header {
+    color: black;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.profile-pic {
+    height: auto;
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    width: 50%
+}
+
+.about-me-text {
+    color: black;
+    margin: 1.5rem auto 5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+/* for resume.html */
+.resume-section {
+    color: black;
+    margin-top: 8rem;
+    font-size: 24px;
+}
+
+.resume-section:hover {
+    color: black;
+}
+
+#education {
+    margin-left: 4rem;
+}
+
+#black-box {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 3rem;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.populate-info {
+    color: black;
+}
+
+.download-or-visit{ 
+    text-align: center;
+    color: rgb(193, 193, 193);
+}
+
+.find-me {
+    color: rgb(113, 113, 113);
+    bottom: 0;
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+.find-me:hover {
+    text-decoration: none;
+}
+
+.download-resume {
+    width: 10%;
+    filter: grayscale(50%);
+}
+
+.download {
+    padding-left: 0.5rem;
+}
+
+.social {
+    float: right;
+    padding-right: 4rem;
+}
+
+.contact-image:hover {
+    text-decoration: none;
+}
+
+.contact-image {
+    background-color: rgb(193, 193, 193);
+    border-radius: 0.7rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    display: inline;
+}
+
+#footer {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+
+
+
+
+
+/* for portfolio.html */
+#instructions {
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.portfolio-image {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    width: 500px;
+    height: 350px;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.portfolio-image:hover {
+    filter: none;
+}
+
+.repo-link {
+    color: rgb(120, 120, 120);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.repo-link:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.low-row {
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+/* for contact.html */
+.header2 {
+    color: rgb(193, 193, 193);
+    text-align: center;
+    margin-top: 1.5rem
+}
+
+.form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    visibility: hidden;
+}
+
+label {
+    color: rgb(193, 193, 193);
+}
+
+.form-control {
+    background-color: rgba(33, 33, 33, 0.559);
+    
+}
+
+input.form-control:focus {
+    background-color:rgba(33, 33, 33, 0.559);
+    color: whitesmoke;
+    border-color: whitesmoke !important;
+    box-shadow: whitesmoke !important;
+    box-shadow: none;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   -moz-transition: none;
+   -webkit-transition: none;
+  }
+
+#search-button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 0.7rem;
+}
+
+.contact {
+    color: rgb(113, 113, 113);
+    text-align: center;
+    margin-top: 7rem;
+    margin-right: 1rem;
+}
+
+.email-icon {
+    width: 50%;
+    cursor: pointer;
+    margin-left: 4rem;
+    position: absolute;
+    top: 8rem;
+}
+
+.message-icon {
+    width: 50%;
+    cursor: pointer;
+    margin-left: 4rem;
+    position: absolute;
+    top: 9rem;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1199px) {
+
+    .portfolio-image {
+        width: 75%;
+        margin-left: 7rem;
+    }
+ 
+    .low-row {
+        margin-bottom: 2rem;
+    }
+
+     .email-icon {
+        margin-left: 2.5rem;
+    }
+
+    #email-me {
+        margin-right: 5rem;
+    }
+
+    #message-me {
+        margin-left: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .portfolio-image {
+       width: 75%;
+       margin-left: 7rem;
+    }
+
+    .low-row {
+        margin-bottom: 2rem;
+    }
+
+    .email-icon {
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .low-row {
+        margin-bottom: 2rem;
+    }
+
+    .email-icon {
+        margin-left: 0.3rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .portfolio-image {
+        margin-left: 6rem;
+    }
+
+    .email-icon, 
+    .message-icon {
+        padding-top: 2rem;
+        width: 60%;
+    }
+
+    #email-me {
+        margin-right: 2.5rem;
+    }
+
+    #message-me {
+        margin-left: 4.5rem;
+        margin-right: 0;
+        margin-top: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    /* .profile-pic {
+        margin: 0;
+        padding-top: 5rem;
+    } */
+
+    #black-box {
+        margin-top: 1.5rem;
+    }
+
+    #skills {
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }   
+
+    #experience, 
+    #education {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }   
+
+    #footer {
+        top: 100%;
+    }
+
+    .download {
+        margin-left: 7rem;
+    }
+
+    .social {
+        margin-top: 1rem;
+        margin-right: 4rem;
+    }
+
+    .email-icon, 
+    .message-icon {
+        width: 40%;
+    }
+
+    .message-icon {
+        padding-top: 10rem;
+        margin-left: 9rem;
+    }
+
+    #email-me {
+        margin-right: 2rem;
+    }
+
+    #message-me {
+        padding-top: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 6rem;
+    }
+
+    /* .form {
+        margin-top: 3rem;
+    } */
+}
+
+@media screen and (max-width: 540px) {
+    .nav-link {
+        padding-right: 1.5rem;
+    }
+
+    .header {
+        margin-top: 6.5rem;
+    }
+
+    .portfolio-image {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .message-icon {
+        padding-top: 10rem;
+        margin-left: 9.5rem;
+    }
+
+    .email-icon {
+        left: 10rem;
+    }
+
+    .download {
+        margin-left: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .nav-link {
+        padding-right: 1.5rem;
+    }
+    
+    .portfolio-image {
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+
+    #footer {
+        top: 100%;
+    }
+
+    .social {
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
+
+    .download {
+        margin-left: 0.7rem;
+    }
+
+    .contact-image {
+        margin: 1rem 0;
+    }
+
+    #email-me {
+        margin-right: 0.8rem;
+    }
+
+    .message-icon {
+        padding-top: 10rem;
+        margin-left: 7.5rem;
+    }
+
+    .email-icon {
+        left: 8rem;
+    }
+}
+ 
+
+
+@media screen and (max-width: 375px) {
+
+    .email-icon {
+        left: 23%;
+    }
+
+    .name-links {
+        padding: 0 0.5rem;
+    }
+
+    .download {
+        margin-left: -1rem;
+    }
+
+    .social {
+        margin-left: 5.5rem;
+        padding-right: 3rem;
+    }
+
+    .contact-image {
+        margin: 1rem 0;
+    }
+
+    #email-me {
+        margin-left: 1.5em;
+    }
+
+    #message-me {
+        margin-left: 1rem;
+    }
+
+    .email-icon {
+        left: 7.5rem;
+    }
+
+    .message-icon {
+        margin-left: 6.5rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .download {
+        margin-left: 1rem;
+        padding-top: 16rem;
+    }
+
+    .social {
+        margin-left: 6.5rem;
+        padding-right: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .social {
+        margin-left: 5rem;
+        padding-right: 0;
+    }
+
+    #email-me {
+        margin-left: 0.5em;
+    }
+
+    #message-me {
+        margin-left: 0;
+    }
+
+    .email-icon {
+        left: 6.5rem;
+    }
+
+    .message-icon {
+        margin-left: 5.5rem;
+    }
+}
+
