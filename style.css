@@ -1,0 +1,14 @@
+body {
+    background-color: coral;
+}
+
+#Header a:hover {
+    color: #ffffff
+}
+
+#bg-img {
+    background: url('Assets/Images/bkg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
